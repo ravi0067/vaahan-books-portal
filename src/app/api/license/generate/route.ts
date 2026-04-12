@@ -21,7 +21,7 @@ export async function POST(req: Request) {
       licenseKey,
       plan: planType,
       expiresAt: new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString(),
-      downloadUrl: "https://github.com/ravi0067/vaahan-books/releases/latest/download/VaahanBooks-Setup.exe"
+      downloadUrl: "https://github.com/ravi0067/vaahan-books/releases/tag/v1.0.0"
     });
 
   } catch {
