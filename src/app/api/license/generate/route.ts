@@ -3,7 +3,7 @@ import crypto from 'crypto';
 
 export async function POST(req: Request) {
   try {
-    const { planType, paymentId, email } = await req.json();
+    const { planType, paymentId } = await req.json();
 
     if (!paymentId || !planType) {
       return NextResponse.json({ error: "Invalid payment details" }, { status: 400 });
