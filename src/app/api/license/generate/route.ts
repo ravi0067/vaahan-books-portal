@@ -24,7 +24,7 @@ export async function POST(req: Request) {
       downloadUrl: "https://github.com/ravi0067/vaahan-erp/releases/latest/download/VaahanBooks-Setup.exe"
     });
 
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: "Failed to generate license" }, { status: 500 });
   }
 }

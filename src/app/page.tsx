@@ -5,7 +5,7 @@ import { Download, CheckCircle2, ShieldCheck, Zap } from 'lucide-react';
 
 export default function PortalLanding() {
   const [loading, setLoading] = useState(false);
-  const [licenseInfo, setLicenseInfo] = useState<any>(null);
+  const [licenseInfo, setLicenseInfo] = useState<{licenseKey: string, downloadUrl: string} | null>(null);
 
   const handlePurchase = async (plan: string) => {
     setLoading(true);
