@@ -126,6 +126,57 @@ export default function PortalLanding() {
         )}
 
       </div>
+
+      {/* Contact Section */}
+      <section className="border-t border-gray-800 bg-gray-950/50">
+        <div className="max-w-6xl mx-auto px-6 py-20">
+          <h2 className="text-3xl font-bold text-center mb-12">Contact Support</h2>
+          <div className="grid gap-8 sm:grid-cols-3 text-center">
+            <div className="space-y-4">
+              <div className="w-12 h-12 rounded-full bg-teal-500/10 flex items-center justify-center mx-auto text-teal-400">
+                <span className="text-2xl">📍</span>
+              </div>
+              <p className="font-bold text-white">Address</p>
+              <p className="text-sm text-gray-400">Chinhat, Gomti Nagar, Lucknow 226028</p>
+            </div>
+            <div className="space-y-4">
+              <div className="w-12 h-12 rounded-full bg-teal-500/10 flex items-center justify-center mx-auto text-teal-400">
+                <span className="text-2xl">📧</span>
+              </div>
+              <p className="font-bold text-white">Email</p>
+              <p className="text-sm text-gray-400">support@vaahanerp.com</p>
+            </div>
+            <div className="space-y-4">
+              <div className="w-12 h-12 rounded-full bg-teal-500/10 flex items-center justify-center mx-auto text-teal-400">
+                <span className="text-2xl">📞</span>
+              </div>
+              <p className="font-bold text-white">Phone</p>
+              <p className="text-sm text-gray-400">+91 9554762008</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-gray-900 bg-black py-12">
+        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 rounded-lg bg-teal-500 flex items-center justify-center font-bold text-black">V</div>
+            <span className="text-xl font-bold tracking-tight">VaahanBooks</span>
+          </div>
+          
+          <div className="text-center md:text-left">
+            <p className="text-gray-500 text-sm italic">Powered by Ravi Accounting Services</p>
+            <p className="text-gray-400 text-sm mt-1">© 2026 Ravi Accounting Services. All rights reserved.</p>
+          </div>
+
+          <div className="flex flex-wrap gap-6 text-sm text-gray-500">
+            <a href="#" className="hover:text-teal-400">Privacy Policy</a>
+            <a href="#" className="hover:text-teal-400">Terms of Service</a>
+            <a href="#" className="hover:text-teal-400">Data Deletion</a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
